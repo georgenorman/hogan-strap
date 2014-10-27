@@ -8,14 +8,17 @@
 /**
  * View Controller for the main page (index.html).
  */
-var mainViewController = (function(contentService) {
+var mainViewController = (function(contentService, hsConfg) {
   "use strict";
 
   var simulatedData = null;
 
   return {
     render: function() {
-      hsCommonModule.injectNamedTemplate("components/header.hogan", "#header", {homeActive:true});
+      hsCommonModule.injectNamedTemplate("components/header.hogan", "#header", {
+        homeActive:true,
+        baseUrl:hsConfg.getString("baseUrl")
+      });
       hsCommonModule.injectNamedTemplate("components/carousel.hogan", "#carousel");
       hsCommonModule.injectNamedTemplate("components/footer.hogan", "footer");
 
@@ -48,5 +51,5 @@ var mainViewController = (function(contentService) {
     }
   }
 
-}(contentServiceModule));
+}(contentServiceModule, hsConfgModule));
 
