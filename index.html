@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!--
+ ~ HoganStrap - index.html
+ ~
+ ~   Must be opened on a server, if your browser does not support cross origin requests for the file protocol scheme
+ ~   (which is quite likely every browser). An easy way to do this on OS-X is to cd to the directory that contains
+ ~   this file and run the following command (change the port if there's a conflict):
+ ~
+ ~      python -m SimpleHTTPServer 8080
+ ~
+ ~   Now the file can be opened with the following URL:
+ ~
+ ~      http://localhost:8080/
+ ~
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>HoganStrap</title>
+
+  <link href="css/bootstrap-3.2.0.min.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header" class="navbar-wrapper"></div>
+  <div id="carousel"></div>
+
+  <main></main>
+
+  <footer class="container"></footer>
+
+  <script src="js/lib/all-lib.min.js"></script>
+  <script src="js/hs-common.js"></script>
+  <script src="js/service/content-service.js"></script>
+  <script src="js/view-controller/main-vc.js"></script>
+
+  <script>
+    mainViewController.render();
+  </script>
+</body>
+</html>

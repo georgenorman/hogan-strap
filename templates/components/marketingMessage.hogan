@@ -1,0 +1,13 @@
+<!--
+ ~
+ ~ Marketing message template - Renders a simple message panel consisting of
+ ~ a medium-sized circular image, followed by a heading, message and detail button.
+ ~
+ -->
+
+<div class="{{panelClass}}">
+  <img class="img-circle" src="{{imageSrc}}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+  <h2>{{heading}}</h2>
+  <p>{{content}}</p>
+  <p><a class="btn btn-default" href="{{detailHref}}" role="button">View details &raquo;</a></p>
+</div>

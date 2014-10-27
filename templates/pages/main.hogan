@@ -1,0 +1,16 @@
+
+<div class="container marketing">
+
+  <div class="row">
+    {{{marketingMessage1}}}
+    {{{marketingMessage2}}}
+    {{{marketingMessage3}}}
+  </div>
+
+  <hr class="featurette-divider">
+
+  {{{marketingFeaturette1}}}
+  {{{marketingFeaturette2}}}
+  {{{marketingFeaturette3}}}
+
+</div>

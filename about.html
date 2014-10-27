@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!--
+ ~ HoganStrap - about.html
+ ~
+ ~   Must be opened on a server, if your browser does not support cross origin requests for the file protocol scheme
+ ~   (which is quite likely every browser). An easy way to do this on OS-X is to cd to the directory that contains
+ ~   this file and run the following command (change the port if there's a conflict):
+ ~
+ ~      python -m SimpleHTTPServer 8080
+ ~
+ ~   Now the file can be opened with the following URL:
+ ~
+ ~      http://localhost:8080/about.html
+ ~
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>About - HoganStrap</title>
+
+  <link href="css/bootstrap-3.2.0.min.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header" class="navbar-wrapper"></div>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>About <span class="glyphicon glyphicon-leaf" style="color:#080;"></span> HoganStrap</h1>
+            <p>
+              HoganStrap is a simple integration of the <a href="http://getbootstrap.com/examples/carousel/">Carousel</a> Bootstrap example,
+              using <a href="http://twitter.github.io/hogan.js/">Hogan</a> templates.
+            </p>
+            <p style="margin-top:200px;"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main></main>
+
+  <footer class="container"></footer>
+
+  <script src="js/lib/all-lib.min.js"></script>
+  <script src="js/hs-common.js"></script>
+  <script src="js/service/content-service.js"></script>
+  <script src="js/view-controller/about-vc.js"></script>
+
+  <script>
+    aboutViewController.render();
+  </script>
+</body>
+</html>
